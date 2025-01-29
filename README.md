@@ -1,27 +1,24 @@
-Cisco Network Automation Script
+# Cisco Network Automation Script  
 
-This Python script automates the configuration of OSPF (Open Shortest Path First) on Cisco network devices. It uses the Netmiko library to establish SSH connections and configure devices securely.
+This Python script automates the configuration of OSPF (Open Shortest Path First) on Cisco network devices. It uses the `Netmiko` library to establish SSH connections and configure devices securely.
 
-Features:
+## Features  
 
-  1) Connect to multiple Cisco devices via SSH
+- Connect to multiple Cisco devices via SSH  
+- Validate IP addresses before configuration  
+- Ensure no duplicate device configuration  
+- Configure OSPF process ID and networks dynamically  
+- Handle authentication and timeout errors gracefully  
 
-  2) Validate IP addresses before configuration
+---
 
-  3) Ensure no duplicate device configuration
+## Prerequisites  
 
-  4) Configure OSPF process ID and networks dynamically
+Ensure you have the following installed before running the script:  
 
-  5) Handle authentication and timeout errors gracefully
-
-Prerequisites:
-
-  1) Ensure you have the following installed before running the script:
-
-  2) Python 3.6 or higher
-
-Required Python modules:
-
+- Python 3.6 or higher  
+- Required Python modules:  
+  ```bash
   pip install netmiko
 
 
